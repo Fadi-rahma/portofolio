@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fadi Rahma Azizah — Portofolio</title>
+<meta name="description" content="Portofolio Fadi Rahma Azizah — Siswa Teknik Komputer & Jaringan (TKJ/TJKT), SMK Negeri 1 Dukuhturi." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-lang="id">
+
+  <!-- Custom Glowing Cursor -->
+  <div id="cursor-glow"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- Navbar -->
+  <header class="navbar glass">
+    <div class="brand">
+      <div class="brand-badge" id="brand-initials">FR</div>
+      <span>Fadi Rahma Azizah</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" data-i18n="nav.home">Beranda</a>
+      <a href="#skills" data-i18n="nav.skills">Keahlian</a>
+      <a href="#projects" data-i18n="nav.projects">Proyek</a>
+      <a href="#certificates" data-i18n="nav.certificates">Sertifikat</a>
+      <a href="#contact" data-i18n="nav.contact">Kontak</a>
+    </nav>
+    <button id="lang-switch" class="lang-switch" aria-label="Switch language">
+      <span class="lang-face front">ID</span>
+      <span class="lang-face back">EN</span>
+      <span class="lang-knob"></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <div class="hero-content">
+      <p class="greeting" data-i18n="hero.greeting">Halo, saya</p>
+      <h1 data-i18n="hero.name">Fadi Rahma Azizah</h1>
+      <p class="nickname" data-i18n="hero.nickname">biasa dipanggil Rahma</p>
+      <span class="role-badge glass" data-i18n="hero.role">Siswa Teknik Komputer & Jaringan (TKJ/TJKT)</span>
+      <p class="school" data-i18n="hero.school">SMK Negeri 1 Dukuhturi · 2024 – 2027</p>
+      <p class="personality" data-i18n="hero.personality">Tipe kepribadian INTJ — strategis, analitis, dan terstruktur.</p>
+      <p class="desc" data-i18n="hero.desc">Fokus membangun fondasi kuat di dunia jaringan & infrastruktur.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-ghost glass" data-i18n="hero.ctaContact">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="orbit-wrap glass">
+      <canvas id="orbit-canvas"></canvas>
+      <p class="orbit-caption" data-i18n="hero.orbitCaption">Visualisasi jaringan node</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Skill Set</span>
+        <h2 data-i18n="skills.title">Keahlian</h2>
+        <p data-i18n="skills.subtitle">Arahkan kursor ke setiap kartu untuk melihat rincian.</p>
+      </div>
+      <div class="bento-grid" id="bento-grid"></div>
+      <p class="skills-note" id="skills-note"></p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / CERTIFICATION TRAINING -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Journey</span>
+        <h2 data-i18n="experience.title">Pengalaman, Pelatihan & Sertifikasi</h2>
+      </div>
+      <div class="exp-grid" id="exp-grid"></div>
+      <p class="exp-more">
+        <span id="exp-more-text"></span>
+        <a id="exp-more-link" href="#" target="_blank" rel="noopener"> →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Portfolio</span>
+        <h2 data-i18n="projects.title">Proyek yang Telah Dideploy</h2>
+        <p data-i18n="projects.subtitle">Lima proyek yang sudah live dan dapat diakses langsung.</p>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Achievements</span>
+        <h2 data-i18n="certificates.title">Sertifikat</h2>
+        <p data-i18n="certificates.subtitle">Klik atau arahkan kursor ke kartu untuk melihat detail.</p>
+      </div>
+      <div class="cert-track" id="cert-track"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card glass">
+        <h2 data-i18n="contact.title">Mari Terhubung</h2>
+        <p data-i18n="contact.subtitle">Terbuka untuk kolaborasi maupun diskusi seputar teknologi.</p>
+        <div class="contact-links">
+          <a id="contact-wa" class="contact-chip glass" href="#" target="_blank" rel="noopener">
+            💬 <span id="contact-wa-text">WhatsApp</span>
+          </a>
+          <a id="contact-email" class="contact-chip glass" href="#">
+            ✉️ <span id="contact-email-text">Email</span>
+          </a>
+          <a id="contact-linkedin" class="contact-chip glass" href="#" target="_blank" rel="noopener">
+            🔗 LinkedIn
+          </a>
+          <a id="contact-github" class="contact-chip glass" href="#" target="_blank" rel="noopener">
+            🐙 GitHub
+          </a>
+          <span class="contact-chip glass">
+            📍 <span data-i18n="contact.locationValue">Tegal, Jawa Tengah</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="contact.footer">Dirancang & dikembangkan oleh Fadi Rahma Azizah.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/orbit.js"></script>
+  <script src="js/bento.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/certificates.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
